@@ -1,0 +1,78 @@
+.avatar img{
+  width:100%;
+  height:auto;
+  border-radius:0%;
+  margin-top: -1.6rem;
+}
+@media only screen and (max-device-width:768px){
+  .avatar img{width:100%}
+}
+
+.navigation {
+  height: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navigation a{
+  text-transform: none;
+  float: left;
+  line-height: 4.0rem;
+}
+
+.btn-mobile {
+  display: block;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.navigation img{
+  float: left;
+  height: 4.0rem;
+  width:auto;
+  margin: 0rem;
+  margin-right: 1rem;
+}
+
+.centered .about ul li a {
+    text-transform: none;
+}
+
+.centered {
+    align-items: start;
+    height: auto;
+}
+
+.container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+a:before,a:after{
+  position:absolute;
+  bottom:2px;
+  content:"";
+  display:inline-block;
+  width:0;
+  height:2px;
+  background:#666666;
+  transition:.3s
+}
+a:before{
+  left:50%
+}
+a:after{
+  right:50%
+}
+a:focus,a:hover{
+  text-decoration:none
+}
+a:hover:before,a:hover:after{
+  width:50%
+}
+
+.centered h3{
+  text-align: center;
+}

@@ -3,8 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://otutama.net/apps/lifecounterformtg/</loc>
+    <lastmod>2019-02-05T00:11:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://otutama.net/apps/meteor/</loc>
+    <lastmod>2019-02-05T00:11:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://otutama.net/apps/tenvader/</loc>
+    <lastmod>2019-02-05T00:11:16+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://otutama.net/privacypolicy/</loc>
     <lastmod>2019-02-05T00:10:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://otutama.net/apps/</loc>
+    <lastmod>2019-02-05T00:11:16+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -14,7 +35,7 @@
   
   <url>
     <loc>https://otutama.net/</loc>
-    <lastmod>2019-02-05T00:10:30+09:00</lastmod>
+    <lastmod>2019-02-05T00:11:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   

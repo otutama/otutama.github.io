@@ -1,0 +1,239 @@
+/* @import url(http://fonts.googleapis.com/css?family=Montserrat); */
+
+body
+{
+    font-family: 'GillSansStd-ExtraBold', sans-serif;
+    font-size: 11px;
+    background-color: #f7f6f9;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+a
+{
+    color: #e70c53;
+    text-decoration: none;
+}
+
+h1
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+#container
+{
+    position: relative;
+    max-width: 1500px;
+    margin-left: auto ;
+    margin-right: auto ;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* #gradient
+{
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    background-color: #c5c4c6;
+    background-image: url('/src/img/gradient.png');
+    background-repeat: repeat-x;
+    background-size: 100%  550px;
+} */
+
+#container-wrapper
+{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-image: url('/img/gameover_back.png');
+    background-position: center top;
+}
+
+
+#logo img
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+#downloads
+{
+    max-height: 100%;
+    margin: 100px;
+    min-height: 70px;
+}
+
+
+#description
+{
+    padding-bottom: 40px;
+}
+
+#logo span
+{
+    display: none;
+}
+
+#logo img
+{
+    width: 800px;
+    height: auto;
+}
+
+#trailer
+{
+    width: 100% !important;
+    height: auto   !important;
+    display: inline-block;
+    position: relative;
+}
+
+#trailer:after
+{
+    padding-top: 56.25%;
+    /* 16:9 ratio */
+    display: block;
+    content: '';
+}
+
+
+#trailer iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#thumbnails img
+{
+    width: 100%;
+}
+
+
+#ios-download
+{
+    padding-top: 10px;
+}
+
+
+#ios-download img
+{
+    width: 150px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+#downloads
+{
+    margin: 20px;
+}
+
+
+#info
+{
+    padding-top: 50px;
+}
+
+
+#info h1
+{
+    padding-bottom: 10px;
+}
+
+
+#jonathan-topf
+{
+    margin-top: 200px;
+    padding-bottom: 50px;
+    padding-bottom: 0;
+}
+
+
+#jonathan-topf img
+{
+    width: 100px;
+    height: auto;
+    position: relative;
+    top: 10px;
+}
+
+
+#jonathan-topf span
+{
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    #logo
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #downloads
+    {
+        margin: 10px;
+    }
+
+    #downloads img
+    {
+        margin: 10px;
+    }
+/*
+    #gradient
+    {
+        height: 250px;
+        background-size: 250px  250px;
+    } */
+
+    #container-wrapper
+    {
+        background-size: 500px 1000px;
+    }
+
+    #logo img
+    {
+        width: 400px;
+        height: auto;
+    }
+}
+.video {
+position: relative;
+height: 0;
+padding: 30px 0 56.25%;
+overflow: hidden;
+}
+
+.video iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}

@@ -21,7 +21,6 @@
 }
 
 .btn-mobile {
-  display: block;
   font-size: 2rem;
   color: black;
   cursor: pointer;
@@ -35,7 +34,6 @@
   margin: 0rem;
   margin-right: 1rem;
 }
-
 .centered .about ul li a {
     text-transform: none;
 }

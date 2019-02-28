@@ -8,3 +8,7 @@
 .apppage p{
   margin: 0px;
 }
+
+.apppage h3{
+  color: inherit;
+}

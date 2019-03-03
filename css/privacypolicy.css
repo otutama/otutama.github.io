@@ -1,0 +1,19 @@
+.privacy article header{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.privacy p{
+  font-size: 14px;
+}
+
+.privacy article{
+  padding: 2rem;
+}
+
+.privacy h1{
+  font-size: 24px;
+}
+.privacy h2{
+  font-size: 22px;
+}

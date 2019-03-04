@@ -74,6 +74,17 @@ a:hover:before,a:hover:after{
   width:50%
 }
 
+.titlelogo:before{
+  left:0%;
+}
+.titlelogo:after{
+  right:0%;
+}
+.titlelogo:hover:before,.titlelogo:hover:after{
+  width:0%
+}
+
+
 .centered h3{
   text-align: center;
 }

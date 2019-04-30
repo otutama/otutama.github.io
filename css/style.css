@@ -1,0 +1,472 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Fira Mono',monospace;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  transition: .3s;
+}
+a::after {
+  display: inline;
+  position: absolute;
+  bottom: -0.2rem;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 0.1rem;
+  background-color: #666666;
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+a:hover::after {
+  width: 100%;
+}
+
+.no-hover-animation::after, .no-hover-animation a::after {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 1.5em
+}
+/* for debug
+div {
+  border-color: #000000cc;
+  border-style: solid;
+  border-width: 0.01rem;
+}
+*/
+
+.centerd{
+  text-align: center;
+}
+
+.section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.content {
+  padding-top: 4rem;
+  min-height: calc( 100vh - 4rem - 5.3rem );
+}
+
+.default-content {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.header-navigation {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  width: 97%;
+  position: fixed;
+  z-index: 99999;
+  background: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1rem;
+  border-bottom-color: #666
+}
+
+.header-navigation--home {
+  height: inherit;
+  display: inline-block;
+}
+
+.header-navigation--title {
+  height: inherit;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  line-height: 4rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+.header-navigation--logo {
+  display: inline-block;
+  height: 4rem;
+}
+
+.header-navigation--separator {
+  display:none;
+}
+@media screen and (min-width:480px) {
+  .header-navigation--separator {
+    margin-top: 0.75rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 0.1rem;
+    vertical-align: top;
+    background: #777777
+  }
+}
+
+.header-navigation--hidden {
+  display: none;
+}
+.header-navigation--menu-icon {
+  display: inline-block;
+  float: right;
+  margin-right: 1rem;
+  vertical-align: top;
+  position: relative;
+  margin-top: 1rem;
+  height: 2rem;
+  width: 3rem;
+}
+.header-navigation--menu-icon span{
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #333;
+  border-radius: 0.4rem;
+}
+.header-navigation--menu-icon span:nth-of-type(1) {
+  top: 0;
+}
+.header-navigation--menu-icon span:nth-of-type(2) {
+  top: 50%;
+}
+.header-navigation--menu-icon span:nth-of-type(3) {
+  top: 100%;
+}
+#header-navigation--input:checked ~ .header-navigation--menu-icon span:nth-of-type(1) {
+  -webkit-transform: rotateY(180deg) translateY(1rem) rotate(45deg);
+  transform: rotateY(180deg) translateY(1rem) rotate(45deg);
+}
+#header-navigation--input:checked ~ .header-navigation--menu-icon span:nth-of-type(2) {
+  opacity: 0;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+#header-navigation--input:checked ~ .header-navigation--menu-icon span:nth-of-type(3) {
+  -webkit-transform: rotateY(180deg) translateY(-1rem) rotate(-45deg);
+  transform: rotateY(180deg) translateY(-1rem) rotate(-45deg);
+}
+@media screen and (min-width:480px) {
+  .header-navigation--menu-icon {
+    display: none;
+  }
+}
+
+.header-navigation--menu {
+  display: none;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+#header-navigation--input:checked ~ .header-navigation--menu {
+  display: block;
+}
+@media screen and (min-width:480px) {
+  .header-navigation--menu {
+    display: inline-block;
+  }
+}
+
+.header-navigation--menulist {
+  display: block;
+  line-height: 4rem;
+  font-weight: bold;
+  text-align: center;
+  background: #ffffff;
+}
+@media screen and (min-width:480px) {
+  .header-navigation--menulist {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.footer {
+  background-color: #333333;
+  color: #cccccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer a{
+  color: #cccccc;
+}
+
+.footer-navigation {
+}
+
+.footer-navigation--list {
+  display: inline-block;
+  margin: 0rem;
+  padding: 0rem;
+  list-style: none;
+}
+
+.footer-navigation--item {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer--copyright {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.about--titleimage {
+  width: 100%;
+  height: auto;
+}
+
+.newslist {
+  display: inline-block;
+  text-align: left;
+}
+
+.newslist--article {
+  margin: 1rem;
+}
+
+.newslist--date {
+  display: inline-block;
+  margin: 1rem;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.newslist--title {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.newslist--title a {
+  display: inline;
+  background-image: linear-gradient(#666666, #666666);
+  background-repeat: no-repeat;
+  background-size: 0% 0.1rem;
+  background-position: left bottom;
+  transition: 0.3s;
+}
+.newslist--title a:hover {
+  transition: 0.3s;
+  background-size: 100% 0.1rem;
+}
+
+.apps--app-icon {
+  margin: 0.5rem;
+  display: inline-block;
+  border: 0.1rem solid lightgray;
+  border-radius: 1.5rem;
+  max-width: 10rem;
+  max-height: 10rem;
+  width: 24%;
+  height: 24%;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.apps--app-icon:hover {
+  opacity: 0.7;
+  transition: .3s;
+}
+
+.link--privacypolicy {
+  font-size: 1.7rem;
+  color: #333333
+}
+
+.contact-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list--item {
+  margin: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.apps-content {
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+}
+
+.app-store-badge {
+  display:inline-block;
+  overflow:hidden;
+  background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2018-03-19&kind=iossoftware&bubble=ios_apps);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:15rem;
+  height:4.4rem;
+  margin: 1.2rem;
+}
+
+.google-play-badge {
+  display:inline-block;
+  overflow:hidden;
+  background:url(https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:17rem;
+  height:6.6rem;
+}
+
+.blog--content {
+  margin: 1rem;
+  vertical-align: top;
+}
+
+.blog--article {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog--menu-content {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width:480px) {
+  .blog--content {
+    margin-left: 0rem;
+    display: table;
+    border-spacing: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .blog--article, .blog--menu {
+    display: table-cell;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  .blog--menu {
+    width: 30rem;
+    box-sizing: border-box;
+  }
+}
+
+.blog--menu-title{
+  border-bottom-style: solid;
+  border-bottom-width: 0.1rem;
+}
+
+.blog--border {
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #999999;
+  border-radius: 0.5rem;
+}
+
+.blog--article-title {
+  padding: 0.2rem;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  font-size: 3.5rem;
+}
+
+.blog--article-date {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #666666;
+}
+
+.blog--article-taglist {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.blog--article-tag {
+  padding: 0.3rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #666666;
+  border-radius: 0.5rem;
+}
+
+.blog--article-content {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.blog--article-list {
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+.blog--article-list-item {
+  margin-top: 3rem;
+}
+
+.blog--article-list-date {
+  color: #666666;
+}
+
+.blog--article-list-title {
+  font-size: 2.5rem;
+}
+
+.blog--share {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.blogcard {
+  display: inline-block;
+  border: 0.1rem solid lightgray;
+  border-radius: 0.5rem;
+  vertical-align: top;
+  padding: 2rem;
+}
+
+
+.blogcard--thumbnail {
+  margin-right: 2rem;
+  display: table-cell;
+  width: 10rem;
+  height: 10rem;
+}
+
+.blogcard--text {
+  display: table-cell;
+  vertical-align: top;
+  text-align: left;
+}
+
+.blogcard--title {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  color: #333366;
+}
+
+.blogcard--description {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}

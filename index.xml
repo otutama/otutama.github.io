@@ -21,12 +21,21 @@
     </item>
     
     <item>
+      <title>プライバシーポリシー</title>
+      <link>https://otutama.net/privacypolicy/</link>
+      <pubDate>Sat, 09 Feb 2019 00:10:30 +0900</pubDate>
+      
+      <guid>https://otutama.net/privacypolicy/</guid>
+      <description>1. 定義 OTUTAMA Studio（アプリケーション制作者）は、以下のとおりプライバシーポリシーを定め、個人情報保護の仕組みを構築し、個人情報保護の重要性</description>
+    </item>
+    
+    <item>
       <title>MTG Counter Life and Poison</title>
       <link>https://otutama.net/apps/lifecounter/</link>
       <pubDate>Tue, 05 Feb 2019 00:11:16 +0900</pubDate>
       
       <guid>https://otutama.net/apps/lifecounter/</guid>
-      <description> </description>
+      <description> Download  </description>
     </item>
     
     <item>
@@ -35,25 +44,7 @@
       <pubDate>Tue, 05 Feb 2019 00:11:16 +0900</pubDate>
       
       <guid>https://otutama.net/apps/meteor/</guid>
-      <description>   </description>
-    </item>
-    
-    <item>
-      <title>Tenvaders</title>
-      <link>https://otutama.net/apps/tenvaders/</link>
-      <pubDate>Tue, 05 Feb 2019 00:11:16 +0900</pubDate>
-      
-      <guid>https://otutama.net/apps/tenvaders/</guid>
-      <description> Download   </description>
-    </item>
-    
-    <item>
-      <title>プライバシーポリシー</title>
-      <link>https://otutama.net/privacypolicy/</link>
-      <pubDate>Tue, 05 Feb 2019 00:10:30 +0900</pubDate>
-      
-      <guid>https://otutama.net/privacypolicy/</guid>
-      <description>1. 定義 OTUTAMA Studio（アプリケーション制作者）は、以下のとおりプライバシーポリシーを定め、個人情報保護の仕組みを構築し、個人情報保護の重要性</description>
+      <description>   Download  </description>
     </item>
     
   </channel>
